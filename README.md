@@ -38,12 +38,13 @@
    * To lunch the Rviz simulator with slider motors control (joint_state_publisher) use this command `roslaunch robot_arm_pkg check_motors.launch`
    * Rviz Simulator:
    
-   ![Circuit Diagram]
+   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Control%20Arn%20in%20Rviz%20.png)
    
 4. To control the robot arm physically connect the circuit diagram with your arm and the install Arduino IDE and ros_lib.
    * Circuit Wiring:
    
-   ![Circuit Diagram]
+   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/circuit.png) 
+   
    * Install Arduino IDE software `wget https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz` then `tar -xvf arduino-1.8.12-linux64.tar.xz` then `cd arduino-1.8.12/` then `sudo ./install.sh`
    * Download rosserial to communicate with arduino using the following commands `sudo apt-get install ros-melodic-rosserial-arduino` then `sudo apt-get install ros-melodic-rosserial`
    * Download ros_lib on arduino software using the following commands `cd Arduino/libraries` then `rm -rf ros_lib` then `rosrun rosserial_arduino make_libraries.py .`
@@ -57,15 +58,16 @@
     * Then run the python script to communicate with Gazebo `rosrun robot_arm_pkg joint_states_to_gazebo.py` 
     * Rviz with Gazebo:
     
-     ![Rviz with Gazebo]
+     ![Rviz with Gazebo](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Rviz%20with%20Gazebo%20Simulator.png)
      
     * Different Angles:
     
-     ![Diiferan Angles]
+     ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/different%20Angles.png)
+    
 6. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
      * `roslaunch moveit_pkg demo.launch`
      * Moveit:
 
-     ![Diiferan Angles]
+     ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Moveit.png)
      
      
