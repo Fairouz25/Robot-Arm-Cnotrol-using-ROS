@@ -33,17 +33,16 @@
    * `sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher`
    * `sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control`
    * open a file (bashrc) : `sudo nano ~/.bashrc`.
-   * At the end of the file add the follwing line`source /home/mo7dsaleh/catkin_ws/devel/setup.bash` then press ctrl + o, (Note that mo7d_saleh is my ubuntu username).
+   * At the end of the file add the follwing line`source /home/FAIROUZ/catkin_ws/devel/setup.bash` then press ctrl + o, (Note that mo7d_saleh is my ubuntu username).
    * `source ~/.bashrc`
    * To lunch the Rviz simulator with slider motors control (joint_state_publisher) use this command `roslaunch robot_arm_pkg check_motors.launch`
    * Rviz Simulator:
    
-   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Control%20Arn%20in%20Rviz%20.png)
-   
+   ![Circuit Diagram]
 4. To control the robot arm physically connect the circuit diagram with your arm and the install Arduino IDE and ros_lib.
    * Circuit Wiring:
    
-   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/circuit.png) 
+   ![Circuit Diagram]
    
    * Install Arduino IDE software `wget https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz` then `tar -xvf arduino-1.8.12-linux64.tar.xz` then `cd arduino-1.8.12/` then `sudo ./install.sh`
    * Download rosserial to communicate with arduino using the following commands `sudo apt-get install ros-melodic-rosserial-arduino` then `sudo apt-get install ros-melodic-rosserial`
@@ -58,16 +57,15 @@
     * Then run the python script to communicate with Gazebo `rosrun robot_arm_pkg joint_states_to_gazebo.py` 
     * Rviz with Gazebo:
     
-     ![Rviz with Gazebo](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Rviz%20with%20Gazebo%20Simulator.png)
+     ![Rviz with Gazebo]
      
     * Different Angles:
     
-     ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/different%20Angles.png)
+     ![Diiferan Angles]
     
 6. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
      * `roslaunch moveit_pkg demo.launch`
      * Moveit:
 
-     ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Moveit.png)
-     
+     ![Diiferan Angles]
      
